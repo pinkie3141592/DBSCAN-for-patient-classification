@@ -50,7 +50,7 @@ def export_cluster_ranges(df, original_names, output_file="cluster_report.txt"):
     print(f"Reporte guardado en: {output_file}")
 
 
-file_path = r"C:\Users\barba\Downloads\metabolic_synthetic.csv"
+file_path = r{Pon aqui la ruta donde hayas descargado el database .csv}
 
 df = pd.read_csv(file_path)
 original_names = list(df.columns)
