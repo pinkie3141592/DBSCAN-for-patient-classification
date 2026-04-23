@@ -1,3 +1,6 @@
+ESTO PROYECTO UTILIZO UN CODIGO GENERADO CON AYUDA DE IA.
+EL ANALISIS DE CLASIFICACION Y  AGRUPAMIENTO FUERON HECHOS POR EL DEV.
+
 # DBSCAN Clustering Analysis
 
 Este proyecto implementa un flujo completo de análisis de clustering utilizando **DBSCAN** sobre un dataset tabular.
