@@ -61,10 +61,12 @@ X = df[['var_2','var_3','var_4','var_5','var_6','var_7','var_8']]
 
 X_scaled = StandardScaler().fit_transform(X)
 
+#PARAMETROS
 ####################################################################################################################
 eps_value = 0.9
 min_samples_value = 2
 ####################################################################################################################
+
 db = DBSCAN(eps=eps_value, min_samples=min_samples_value).fit(X_scaled)
 df['cluster'] = db.labels_
 
@@ -156,7 +158,7 @@ for cluster_id in unique_clusters_no_noise:
     cluster_points = X_pca[labels == cluster_id]
     centroid = cluster_points.mean(axis=0)
     
-    # Dibujar estrella (centro)
+    # Centroide estrellita
     ax_plot.scatter(
         centroid[0],
         centroid[1],
@@ -166,7 +168,7 @@ for cluster_id in unique_clusters_no_noise:
         linewidth=1.5
     )
     
-    # Etiqueta del cluster (ligeramente arriba)
+    # Etiqueta del cluster
     ax_plot.text(
         centroid[0],
         centroid[1] + 0.15,
@@ -192,7 +194,7 @@ info_text = (
     f"Silhouette Score:, {score}"
 )
 
-ax_text.axis("off")  # quitar ejes
+ax_text.axis("off")
 ax_text.text(0.01, 0.95, info_text, va='top', fontsize=10)
 
 plt.tight_layout()
