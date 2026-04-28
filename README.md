@@ -6,6 +6,10 @@ A Python-based implementation of the **DBSCAN** (Density-Based Spatial Clusterin
   <img src="assets/Figure_1.png" width="500">
 </p>
 
+<p align="center">
+  PCA projection with DBSCAN cluster separation
+</p>
+
 ---
 
 ## Features
